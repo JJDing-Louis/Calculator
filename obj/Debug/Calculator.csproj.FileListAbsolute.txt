@@ -8,3 +8,13 @@ D:\Software(Program)\Personal-Work-Space\C# Project\Calculator\obj\Debug\Calcula
 D:\Software(Program)\Personal-Work-Space\C# Project\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
 D:\Software(Program)\Personal-Work-Space\C# Project\Calculator\obj\Debug\Calculator.exe
 D:\Software(Program)\Personal-Work-Space\C# Project\Calculator\obj\Debug\Calculator.pdb
+D:\Software(Program)\Calculator\bin\Debug\Calculator.exe.config
+D:\Software(Program)\Calculator\bin\Debug\Calculator.exe
+D:\Software(Program)\Calculator\bin\Debug\Calculator.pdb
+D:\Software(Program)\Calculator\obj\Debug\Calculator.csprojAssemblyReference.cache
+D:\Software(Program)\Calculator\obj\Debug\Calculator.Form1.resources
+D:\Software(Program)\Calculator\obj\Debug\Calculator.Properties.Resources.resources
+D:\Software(Program)\Calculator\obj\Debug\Calculator.csproj.GenerateResource.cache
+D:\Software(Program)\Calculator\obj\Debug\Calculator.csproj.CoreCompileInputs.cache
+D:\Software(Program)\Calculator\obj\Debug\Calculator.exe
+D:\Software(Program)\Calculator\obj\Debug\Calculator.pdb

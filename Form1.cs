@@ -91,7 +91,12 @@ namespace Calculator
 
         private void btnEqual_Click(object sender, EventArgs e)
         {
+            result1.Text =""+ total;
+        }
 
+        private void btnClose_Click(object sender, EventArgs e)
+        {
+            System.Environment.Exit(0);
         }
     }
 }

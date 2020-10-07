@@ -44,6 +44,7 @@
             this.btnMulti = new System.Windows.Forms.Button();
             this.btnDivide = new System.Windows.Forms.Button();
             this.result1 = new System.Windows.Forms.Label();
+            this.btnClose = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnOne
@@ -208,11 +209,22 @@
             this.result1.Text = "0";
             this.result1.Click += new System.EventHandler(this.result1_Click);
             // 
+            // btnClose
+            // 
+            this.btnClose.Location = new System.Drawing.Point(25, 330);
+            this.btnClose.Name = "btnClose";
+            this.btnClose.Size = new System.Drawing.Size(63, 46);
+            this.btnClose.TabIndex = 16;
+            this.btnClose.Text = "Close";
+            this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(376, 399);
+            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnDivide);
             this.Controls.Add(this.btnMulti);
             this.Controls.Add(this.btnMinus);
@@ -254,6 +266,7 @@
         private System.Windows.Forms.Button btnMulti;
         private System.Windows.Forms.Button btnDivide;
         private System.Windows.Forms.Label result1;
+        private System.Windows.Forms.Button btnClose;
     }
 }
 
