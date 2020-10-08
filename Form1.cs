@@ -14,8 +14,6 @@ namespace Calculator
             InitializeComponent();
         }
 
-
-
         private void btnOne_Click(object sender, EventArgs e)
         {
             result1.Text = a.keyinNum(result1.Text, btnOne.Text);
@@ -79,7 +77,7 @@ namespace Calculator
             {
                 total = total + int.Parse(result1.Text);
             }
-            result1.Text = a.keyinOp(result1.Text, btnPluse.Text);
+            result1.Text = a.keyinOp(result1.Text, btnPluse.Text);//把Operator放入文字
             LblProcess.Text += result1.Text;
             result1.Text = "0";
 
@@ -87,12 +85,24 @@ namespace Calculator
 
         private void btnMinus_Click(object sender, EventArgs e)
         {
+            if (total == 0)
+            {
+                total = int.Parse(result1.Text);
+            }
+            else
+            {
+                total = total - int.Parse(result1.Text);
+            }
             result1.Text = a.keyinOp(result1.Text, btnMinus.Text);
+            LblProcess.Text += result1.Text;
+            result1.Text = "0";
         }
 
         private void btnMulti_Click(object sender, EventArgs e)
         {
+ 
             result1.Text = a.keyinOp(result1.Text, btnMulti.Text);
+
         }
 
         private void btnDivide_Click(object sender, EventArgs e)
@@ -105,6 +115,16 @@ namespace Calculator
             if (LblProcess.Text.EndsWith("+"))
             {
                 total = total + int.Parse(result1.Text);
+            } else if(LblProcess.Text.EndsWith("-")){
+                total = total - int.Parse(result1.Text);
+            }
+            else if (LblProcess.Text.EndsWith("*"))
+            {
+                
+            }
+            else if (LblProcess.Text.EndsWith("/"))
+            {
+               
             }
             result1.Text =""+ total;
             buffer= 0;

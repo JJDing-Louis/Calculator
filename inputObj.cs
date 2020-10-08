@@ -36,5 +36,13 @@ namespace Calculator
                 return x;
             }
         }
+
+        public int counting(int x,int y, string op)
+        {
+             //想一下怎麼寫
+
+
+            return x;
+        }
     }
 }
