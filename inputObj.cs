@@ -17,7 +17,8 @@ namespace Calculator
             {
                 return y;               
             }
-            else { x += y;
+            else 
+            { x += y;
                 return x;
             }
                        

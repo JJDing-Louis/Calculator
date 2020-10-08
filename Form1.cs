@@ -6,6 +6,7 @@ namespace Calculator
     public partial class Form1 : Form
     {
         int total = 0;
+        int buffer = 0;
         inputObj a = new inputObj();
 
         public Form1()
@@ -13,10 +14,7 @@ namespace Calculator
             InitializeComponent();
         }
 
-        private void result1_Click(object sender, EventArgs e)
-        {
-            
-        }
+
 
         private void btnOne_Click(object sender, EventArgs e)
         {
@@ -66,12 +64,25 @@ namespace Calculator
         private void Reset_Click(object sender, EventArgs e)
         {
             result1.Text = "0";
+            LblProcess.Text = "0";
             total = 0;
+            buffer = 0;
         }
 
         private void btnPluse_Click(object sender, EventArgs e)
         {
-            result1.Text=a.keyinOp(result1.Text, btnPluse.Text);
+            if (total == 0)
+            {
+                total = int.Parse(result1.Text);
+            }
+            else
+            {
+                total = total + int.Parse(result1.Text);
+            }
+            result1.Text = a.keyinOp(result1.Text, btnPluse.Text);
+            LblProcess.Text += result1.Text;
+            result1.Text = "0";
+
         }
 
         private void btnMinus_Click(object sender, EventArgs e)
@@ -91,12 +102,21 @@ namespace Calculator
 
         private void btnEqual_Click(object sender, EventArgs e)
         {
+            if (LblProcess.Text.EndsWith("+"))
+            {
+                total = total + int.Parse(result1.Text);
+            }
             result1.Text =""+ total;
+            buffer= 0;
+            total = 0;
+            LblProcess.Text += result1.Text;
         }
 
         private void btnClose_Click(object sender, EventArgs e)
         {
             System.Environment.Exit(0);
         }
+
+        
     }
 }

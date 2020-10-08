@@ -45,6 +45,7 @@
             this.btnDivide = new System.Windows.Forms.Button();
             this.result1 = new System.Windows.Forms.Label();
             this.btnClose = new System.Windows.Forms.Button();
+            this.LblProcess = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnOne
@@ -202,12 +203,11 @@
             // 
             this.result1.AutoSize = true;
             this.result1.Font = new System.Drawing.Font("新細明體", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.result1.Location = new System.Drawing.Point(35, 28);
+            this.result1.Location = new System.Drawing.Point(35, 47);
             this.result1.Name = "result1";
             this.result1.Size = new System.Drawing.Size(53, 60);
             this.result1.TabIndex = 0;
             this.result1.Text = "0";
-            this.result1.Click += new System.EventHandler(this.result1_Click);
             // 
             // btnClose
             // 
@@ -219,11 +219,20 @@
             this.btnClose.UseVisualStyleBackColor = true;
             this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
+            // LblProcess
+            // 
+            this.LblProcess.AutoSize = true;
+            this.LblProcess.Location = new System.Drawing.Point(45, 13);
+            this.LblProcess.Name = "LblProcess";
+            this.LblProcess.Size = new System.Drawing.Size(0, 15);
+            this.LblProcess.TabIndex = 17;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(376, 399);
+            this.Controls.Add(this.LblProcess);
             this.Controls.Add(this.btnClose);
             this.Controls.Add(this.btnDivide);
             this.Controls.Add(this.btnMulti);
@@ -267,6 +276,7 @@
         private System.Windows.Forms.Button btnDivide;
         private System.Windows.Forms.Label result1;
         private System.Windows.Forms.Button btnClose;
+        private System.Windows.Forms.Label LblProcess;
     }
 }
 
