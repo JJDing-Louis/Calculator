@@ -37,12 +37,36 @@ namespace Calculator
             }
         }
 
-        public int counting(int x,int y, string op)
+        public int counting(string Lblprocess,int total)
         {
-             //想一下怎麼寫
+            String[] nums = Lblprocess.Split();
+            foreach(string num in nums)
+            {
+                if (num.Equals("+"))
+                {
+                    Console.WriteLine(num);
+                }
+                else if(num.Equals("-")){
 
+                    Console.WriteLine(num);
+                }
+                else if (num.Equals("*"))
+                {
+                    Console.WriteLine(num);
+                }
+                else if (num.Equals("/"))
+                {
+                    Console.WriteLine(num);
+                }
+                else
+                {
+                    int i = int.Parse(num);
+                    Console.WriteLine(i);
+                }
 
-            return x;
+            }
+
+            return total;
         }
     }
 }
